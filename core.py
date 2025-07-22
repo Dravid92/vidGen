@@ -1,4 +1,3 @@
-# video_slideshow/core.py
 import subprocess
 from pathlib import Path
 from .builder.py import build_ffmpeg_command
