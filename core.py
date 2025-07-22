@@ -22,7 +22,7 @@ def create_video(slides, output_path, audio=None, size="1080x1920"):
     # Build ffmpeg command
     cmd = build_ffmpeg_command(slides, output_path, audio=audio, size=size)
 
-    # Execute ffmpeg
+    # Execute ffmpeg. 
     try:
         subprocess.run(cmd, check=True)
         print(f"Video created: {output_path}")
